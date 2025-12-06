@@ -1,0 +1,52 @@
+h1{
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    color:#103e2a;
+}
+
+p{
+    font-size: 10px;
+    color:rgb(23, 5, 39);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#discover
+{
+    
+    border: 2px solid  black;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav
+{
+    Position : fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    display: inline;
+    background-color: #e3f2fd;
+    opacity: 0.95;
+    padding: 10px 0px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.52);
+}
+nav ul{
+    list-style-type: none;
+   padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    margin: 0 ;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'sans-serif';
+    color: #fff;
+
+    padding: 10px 15px;
+    font-weight: bold;
+}
