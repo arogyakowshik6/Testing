@@ -1,13 +1,15 @@
 h1{
     font-size: 40px;
     font-family:'Courier New', Courier, monospace;
-    color:#e89090;
+    color:#2e2c2c;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 p{
     font-size: 16px;
     font-family: 'Arial', sans-serif;
-    color:#f0e6e6;
+    color:#272626;
     line-height: 1.5;
 }
 
@@ -251,5 +253,190 @@ button ::after, button ::before{
 .gallery-head{
     text-align: center;
     margin-top: 20px;
-    color: #e06161;
+    display: inline;
+
 }
+.tour-button{
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    color:#151414;
+    text-align: center;
+    box-shadow: #302f2f;
+    border-radius: 3px;
+    padding: 10px 15px;
+    background-color: #7a8376;
+}
+.tour-button:hover{
+    background-color: #fcfffc;
+    color:#000000;
+}
+.tour-button:active{
+    transform: translateY(2px);
+}
+.tour-button a{
+    text-decoration: none;
+    color:#151414;
+}
+.tour-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #73de6a;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.95);
+}
+#tour-info{
+    justify-content: center;
+}
+.tour-package-form{
+    display: inline-block;
+    margin-bottom: 15px;
+   justify-content: right;
+    margin-bottom: 15px;
+    background-image: url("D:/ITOL Diploma/images/buzzard-554486.jpg");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-top: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.95);
+    color: #2128ee;
+    font-display: block;
+    
+}
+.tour-package-form h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}   
+.tour-package-form p{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px #000000;
+}   
+input, select{
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}   
+label{
+    font-size: 14px;
+    font-weight: bold;
+    color:#151414;
+}   
+button.tour-button{
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}   
+button.tour-button:hover{
+    background-color: #45a049;
+}   
+button.tour-button a{
+    color: white;
+}   
+form{
+    display: flex;
+    flex-direction: column;
+}   
+button.tour-button a{
+    text-decoration: none;
+    color:#151414;
+}   
+.about-intro{
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.95);
+    font-size: 18px;
+    font-family: "monserrat", sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    background-image: url("D:/ITOL Diploma/images/lion-9944587.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.about-intro h1{
+    font-family: "monserrat", sans-serif;
+        margin-bottom: 10px;
+        font-size: 28px;
+        color: #e6e6e6;
+        border-bottom: 2px solid #e6e6e6;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+.about-intro p{
+     margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #f4f4f4;
+        text-shadow: 1px 1px 2px #000000;
+    }
+
+    .about-us, .button{
+    position:relative;
+    z-index:1;
+
+    }
+    .learn-more-button{
+    text-transform: uppercase;
+    position: relative;
+    border: none;
+    font-size: 18px;
+    color: #020202;
+    transform: 0,2s;
+    background-color: 0.2s;
+    outline: none;
+    border-radius: 3px;
+    margin: 0 10px;
+    padding: 23px 33px;
+    border: 3px solid transparent;
+    }
+    .learn-more-button:action{
+    transform: translate(3px);
+    }
+    .learn-more-button ::after, .learn-more-button ::before{
+    border-radius:3px;
+    }
+    .learn-more-button:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: #0a0a0a;
+    }
+    .learn-more-button::before{
+        border:3px solid #020202;
+        transition:  opacity 0.3s, border 0.3s;
+    }
+    .learn-more-button:hover::before{
+        opacity:0;
+    }
+    .learn-more-button::after{
+        opacity: 1;
+        transform: scaleX(1) scaleY(1);
+    }
+
+.book{
+    background-image: url("D:/ITOL Diploma/images/rabbit-9926492.jpg");
+    background-size:cover;  
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+

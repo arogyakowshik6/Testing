@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispering Wilds</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <style>
+        h1 {
+            font-family: "monserrat", sans-serif;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+     </style>
+     <script>
+    // JavaScript to handle form submission
+     function myFunction(){
+        alert("Thank you for booking the tour! We will get back to you shortly with the details.");
+     }
+     function backgroundChange(){
+        document.body.style.backgroundImage = "url('D:/ITOL Diploma/images/sparrow-9719599.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
+        document.body.style.backgroundRepeat = "no-repeat";
+     }
+     function validatePhoneNumber(){
+        var phoneInput = document.getElementById("number-only");
+        phoneInput.value = phoneInput.value.replace(/[^0-9]/g, '');
+     }
+     function validateDate(){
+        var dateInput = document.getElementById("date");
+        var selectedDate = new Date(dateInput.value);
+        var currentDate = new Date();
+        if(selectedDate < currentDate){
+            alert("Please select a valid future date.");
+            dateInput.value = "";
+        }
+     }
+     </script>
+</head>
+
+<body onload="backgroundChange()">
+     <nav>
+            <ul>
+                <li><a href="D:\ITOL Diploma\Testing\wildlife.html"title="Home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <path d="M12 2L2 12h3v8h14v-8h3L12 2zm5 15h-2v-6H9v6H7v-7h8v7z"/>
+</svg></a></li>
+                <li><a href="D:\ITOL Diploma\Testing\Tours.html">Tours</a></li>
+                <li><a href="D:\ITOL Diploma\Testing\Gallery.html">Gallery</a></li>
+                <li><a href="D:\ITOL Diploma\Testing\contact us.html">Contact us</a></li>
+                <li><a href="D:\ITOL Diploma\Testing\About us.html">About us</a></li>
+            </ul>
+        </nav><br>
+        <p>
+            Explore our exciting wildlife tours that bring you closer to nature's wonders. From safaris to bird-watching expeditions, we offer a variety of experiences tailored to your interests. Join us for an unforgettable adventure!
+         </p>   
+         <div class="Tour">
+            <h1>Featuring Our Wildlife Tours</h1>
+           <form class="tour-package-form">
+            <label for="First name" >Entler your name:</label>
+            <input type="text" id="First name" name="First name"> <br><br>
+            <label for="Last name" >Enter your last name:</label>
+            <input type="text" id="Last name" name="Last name"> <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"> <br><br>
+            <label for="phone">Phone:</label>
+           <input type="text" id="number-only" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Enter your phone number"> <br><br>
+            <label for="date">Select Start date:</label>
+            <input type="date" id="date" name="date" placeholder="Select a date" onchange="validateDate()"> <br><br>
+             <label for="date">Select End date:</label>
+            <input type="date" id="date" name="date" placeholder="Select a date" onchange="validateDate()"> <br><br>
+            <label for ="guests">Number of guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="20"> <br><br>
+            <label for="Accomidation">Accomidation:</label>
+            <select id="Accomidation" name="Accomidation">
+                <option value="camping">Camping</option>
+                <option value="hotel">Hotel</option>
+                <option value="lodge">Lodge</option>
+            </select> <br><br>
+            <button class="tour-package-button" type="button" onclick="myFunction()">Book Now</button>
+
+           </form>
+
+            </div>
+            <footer>
+            <p>&copy; 2024 Whispering Wilds. All rights reserved.</p>
+            <div class="footer-content">
+            <nav>
+                <ul>
+                    <li><a href="D:\ITOL Diploma\Testing\Tours.html">Tours</a></li>
+                    <li><a href="D:\ITOL Diploma\Testing\Gallery.html">Gallery</a></li>
+                    <li><a href="D:\ITOL Diploma\Testing\contact us.html">Contact us</a></li>
+                    <li><a href="D:\ITOL Diploma\Testing\About us.html">About us</a></li>
+                </ul>
+            </nav>
+            </div>
+            <p class="footer-social">
+                Follow us:
+                <a href="#" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 16.99 22 12z"/>
+</svg></a>
+                <a href="#" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">         
+    <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.3 3.9A12.14 12.14 0 013 4.8a4.28 4.28 0 001.32 5.72 4.24 4.24 0 01-1.94-.54v.05a4.28 4.28 0 003.44 4.2 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.97A8.6 8.6 0 012 19.54a12.14 12.14 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2l-.01-.56A8.72 8.72 0 0024 5.5a8.48 8.48 0 01-2.54.7z"/>
+</svg></a>
+                <a href="#" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">   
+    <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.5a1.5 1.5 0 11-3 .001 1.5 1.5 0 013-.001z"/>
+</svg></a>
+            </p>
+            
+        </footer>
+
+</body>
+</html>

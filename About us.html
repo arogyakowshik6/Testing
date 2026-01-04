@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whispering Wilds</title>
      <link rel="stylesheet" type="text/css" href="style.css">
+     <script>
+    // JavaScript to handle form submission
+        function myFunction(){
+            alert("Thank you for learning more about us! We look forward to connecting with you.");
+        }
+        function backgroundChange(){
+            document.body.style.backgroundImage = "url('D:/ITOL Diploma/images/sparrow-9719599.jpg')";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
+            document.body.style.backgroundRepeat = "no-repeat";
+        }
+        </script>   
 </head>
-<body>
+<body onload="backgroundChange()">
     
      <nav>
             <ul>
@@ -19,8 +31,54 @@
                 <li><a href="D:\ITOL Diploma\Testing\About us.html">About us</a></li>
             </ul>
         </nav><br>
+        <div class="about-intro">
+        <h1>About Us</h1>
         <p>
-            This page provides information about our company, mission, and values.
+            Welcome to Whispering Wilds! We are dedicated to providing unforgettable wildlife experiences through our expertly guided tours. Our mission is to connect people with nature while promoting conservation and sustainable tourism. Learn more about our team, values, and the incredible journeys we offer.
+            <br><br>
+            At Whispering Wilds, we believe in the power of nature to inspire and transform. Our experienced guides are passionate about wildlife and committed to ensuring your adventure is both exciting and educational. Join us as we explore the wonders of the wild together!
+            <br><br>
+            Whether you're a seasoned adventurer or a first-time explorer, Whispering Wilds has something for everyone. Discover our diverse range of tours, from thrilling safaris to serene bird-watching expeditions. We look forward to welcoming you to the Whispering Wilds family!
+            <br><br>
+
          </p>
+         <section >
+            <h1>About Whispering Wilds</h1>
+            <p>
+                Founded in 2020, Whispering Wilds has quickly become a leading name in wildlife tourism. Our team of experts brings years of experience in conservation, wildlife biology, and eco-tourism to create meaningful and responsible travel experiences. We are proud to work closely with local communities to ensure our tours benefit both visitors and the environments we explore.
+            </p>
+           <div class="learn-more-button">
+            <a href="wildlife.html" title="Learn More about Whispering Wilds"><button class="Learn More" onclick="myFunction()">Learn More</button></a>
+            </div>
+        
+        </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Whispering Wilds. All rights reserved.</p>
+            <div class="footer-content">
+            <nav>
+                <ul>
+                    <li><a href="D:\ITOL Diploma\Testing\Tours.html">Tours</a></li>
+                    <li><a href="D:\ITOL Diploma\Testing\Gallery.html">Gallery</a></li>
+                    <li><a href="D:\ITOL Diploma\Testing\contact us.html">Contact us</a></li>
+                    <li><a href="D:\ITOL Diploma\Testing\About us.html">About us</a></li>
+                </ul>
+            </nav>
+            </div>
+            <p class="footer-social">
+                Follow us:
+                <a href="#" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 16.99 22 12z"/>
+</svg></a>
+                <a href="#" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">         
+    <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.3 3.9A12.14 12.14 0 013 4.8a4.28 4.28 0 001.32 5.72 4.24 4.24 0 01-1.94-.54v.05a4.28 4.28 0 003.44 4.2 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.97A8.6 8.6 0 012 19.54a12.14 12.14 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2l-.01-.56A8.72 8.72 0 0024 5.5a8.48 8.48 0 01-2.54.7z"/>
+</svg></a>
+                <a href="#" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">   
+    <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.5a1.5 1.5 0 11-3 .001 1.5 1.5 0 013-.001z"/>
+</svg></a>
+            </p>
+            
+        </footer>
 </body>
 </html>
